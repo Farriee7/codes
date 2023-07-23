@@ -1,0 +1,69 @@
+.main{
+    background-color:rgb(126, 126, 212);
+    position: relative;
+    margin : 200px auto;
+    padding :  20px;
+    width : 500px;
+    font-size:15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+}
+.heading{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+}
+input{
+    width : 300px;
+    border : 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding : 7px;
+    background-color: #fff;
+    box-shadow: inset 1px 1px 5px rgba(0,0,0,.3)
+}
+input#submit{
+    width : 200px;
+    padding : 7px;
+    font-size :16px;
+    font-family: sans-serif;
+    font-weight: 600;
+    border : none;
+    border-radius: 3px;
+    background-color: rgb(192, 59, 77);
+    color: #ddd;
+    cursor : pointer;
+    border : 3px solid rgba(68, 161, 149, 0.3);
+    position: relative;
+    left : 140px;
+}
+
+.Body::before, .Body::after {
+    content: '';
+    scale: 0 100%;
+    background-color: blueviolet;
+    animation: reveal 3s ease-in-out;
+    transition: .5s all;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+}
+
+.Body::before {
+    right: 0;
+}
+
+.Body::after {
+    left: 0;
+}
+
+@keyframes reveal {
+    from {
+        scale: 1;
+    }
+    to{
+        scale: 0% 100%;
+    }
+}

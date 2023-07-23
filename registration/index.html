@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css" type = "text/css">
+</head>
+<body>
+    <form action="connect.php" method="post">
+        <div class = main>
+            <div class = "heading">
+                <h1> Registration Form </h1> <br>
+            </div>
+                <div class = "Body">
+                    <label name = "First name">
+                        First name <input type = "text" name = "first_name" placeholder="Enter your first name" id = "fname"> <br><br>
+                    </label>
+                    <label name = "last name">
+                         Last name <input type = "text" name = "last_name" placeholder="Enter your last name" id = "lname"> <br><br>
+                    </label>
+                    <label for = "gender">
+                        Gender
+                        <input type = "radio" name="gender" value="male"> male
+                        <input type = "radio" name="gender" value="female">female
+                        <input type = "radio" name="gender" value="others">others <br><br>
+                    </label>
+                    <label name = "phone number" >
+                        Phone number 
+                        +91<input type = "text" name = "phnum" placeholder="Enter your phone number" id = "phone"><br><br>
+                        
+                    </label>
+                    <label name = "Email">
+                        Email 
+                        <input type = "email" name = "email" placeholder="Enter your email" id = "email"><br><br>
+                    </label>
+                    <input type="submit" name = "submit" id = "submit">
+
+                </div>
+            </div>
+    </form>
+</body>
+</html>
